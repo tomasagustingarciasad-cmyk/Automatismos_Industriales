@@ -1,0 +1,25 @@
+SECTION 1
+(*SECTTITLE:Inicializacion*)
+(*SECTCOMMENT:*)
+LD %I0.0.0
+ST %Q0.0.0
+LD %I0.0.2
+ST %M2
+S %M3
+LDF %I0.0.3
+ANDN %I0.0.2
+R %M3
+LD 1
+[ %MW1 := %IW0.0.1 ]
+SECTION 1
+(*SECTTITLE:Temporizacion y conteo*)
+(*SECTCOMMENT:*)
+BLK %TM2
+LD %M2
+IN
+OUT_BLK
+LD Q
+ST %M4
+END_BLK
+LD %M4
+ST %Q0.0.2

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+  <PrintSettings>
+    <FileVersion>1.0</FileVersion>
+    <Print>FALSE</Print>
+    <GraphicDescription>
+      <Print>FALSE</Print>
+      <PrintPostIt>TRUE</PrintPostIt>
+      <PrintPagination>TRUE</PrintPagination>
+      <PrintNetworks>TRUE</PrintNetworks>
+    </GraphicDescription>
+    <Characteristics>
+      <Print>FALSE</Print>
+      <PrintModem>TRUE</PrintModem>
+      <PrintTwidoPort>TRUE</PrintTwidoPort>
+      <PrintEtherport>TRUE</PrintEtherport>
+    </Characteristics>
+    <Naming>
+      <Print>FALSE</Print>
+    </Naming>
+  </PrintSettings>
+
+

@@ -1,0 +1,32 @@
+SECTION    1
+(*SECTTITLE:*)
+(*SECTCOMMENT:*)
+BLK   %C0
+LD    %M3
+R
+LD    %I0.0.0
+CU
+OUT_BLK
+LD    D
+ST    %M0
+END_BLK
+BLK   %TM0
+LD    %M0
+IN
+OUT_BLK
+LD    Q
+ST    %M1
+END_BLK
+LD    %M0
+ANDN  %M1
+ST    %Q0.0.0
+LD    %M1
+ANDN  %M3
+ST    %Q0.0.1
+BLK   %TM1
+LD    %M1
+IN
+OUT_BLK
+LD    Q
+ST    %M3
+END_BLK

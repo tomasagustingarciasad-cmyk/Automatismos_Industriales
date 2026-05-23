@@ -1,0 +1,63 @@
+SECTION    1
+(*SECTTITLE:*)
+(*SECTCOMMENT:*)
+LDR   %I0.0.1
+OR    %M1
+ANDN  %I0.0.2
+ANDN  %M2
+ST    %M1
+ST    %Q0.0.4
+BLK   %TM0
+LD    %M1
+ANDN  %M0
+IN
+OUT_BLK
+LD    Q
+ST    %Q0.0.3
+END_BLK
+LD    %Q0.0.3
+ANDN  %M0
+ST    %M2
+BLK   %C0
+LD    %Q0.0.3
+OR    %I0.0.2
+R
+LD    %I0.0.0
+AND   %M1
+ANDN  %M0
+CU
+OUT_BLK
+LD    D
+S     %M0
+S     %Q0.0.1
+END_BLK
+LD    %I0.0.0
+ST    %Q0.0.5
+BLK   %C1
+LD    %Q0.0.3
+OR    %I0.0.2
+R
+LD    %I0.0.3
+AND   %M1
+ANDN  %M0
+CU
+OUT_BLK
+LD    D
+S     %M0
+S     %Q0.0.1
+END_BLK
+LD    %I0.0.3
+ST    %Q0.0.6
+LD    %M0
+ST    %Q0.0.2
+BLK   %TM1
+LD    %M0
+IN
+OUT_BLK
+LD    Q
+R     %Q0.0.1
+END_BLK
+LD    %I0.0.2
+R     %M0
+R     %Q0.0.1
+ST    %Q0.0.7

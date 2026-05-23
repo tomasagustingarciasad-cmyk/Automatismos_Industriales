@@ -1,0 +1,46 @@
+SECTION     1
+(*SECTTITLE:SEGMENTO A*)
+(*SECTCOMMENT:*)
+LD    %I0.0.1
+XOR   %I0.0.2
+ST    %Q0.0.1
+LD    %I0.0.3
+STN   %M0
+LD    %I0.0.1
+AND   %I0.0.2
+AND   %M0
+ST    %Q0.0.2
+SECTION     1
+(*SECTTITLE:SEGMENTO B*)
+(*SECTCOMMENT:*)
+LD    %I0.0.1
+OR    %I0.0.2
+OR    %I0.0.3
+ST    %M1
+LD    %I0.0.5
+OR    %I0.0.6
+ST    %M2
+LD    %I0.0.5
+AND   %I0.0.6
+ST    %M5
+LDN   %M1
+AND   %I0.0.4
+ANDN  %M2
+ST    %M3
+LDN   %I0.0.4
+AND   %M5
+ST    %M4
+LD    %M3
+XOR   %M4
+ST    %Q0.0.3
+ST    %Q0.0.4
+SECTION     1
+(*SECTTITLE:SEGMENTO C*)
+(*SECTCOMMENT:*)
+LD    %I0.0.1
+ST    %M11
+LD    %I0.0.2
+ST    %M12
+LD    %M11
+XOR   %M12
+ST    %Q0.0.0

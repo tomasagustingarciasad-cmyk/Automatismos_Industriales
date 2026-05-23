@@ -1,0 +1,26 @@
+SECTION     1
+(*SECTTITLE:Pulsadores*)
+(*SECTCOMMENT:*)
+LD    %I0.0.0
+ST    %Q0.0.0
+LD    %I0.0.1
+ST    %Q0.0.1
+LDN   %I0.0.2
+ST    %Q0.0.2
+SECTION     1
+(*SECTTITLE:Control*)
+(*SECTCOMMENT:*)
+LD    %I0.0.0
+OR    %M0
+ANDN  %I0.0.2
+ANDN  %M1
+ST    %M0
+LD    %M0
+ST    %Q0.0.7
+LD    %I0.0.1
+OR    %M1
+ANDN  %I0.0.2
+ANDN  %M0
+ST    %M1
+LD    %M1
+ST    %Q0.0.6

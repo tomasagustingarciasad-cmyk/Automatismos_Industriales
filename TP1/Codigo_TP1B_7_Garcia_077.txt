@@ -1,0 +1,11 @@
+SECTION    1
+(*SECTTITLE:*)
+(*SECTCOMMENT:*)
+LD    [ %IW0.0.1 >= 102 ]
+ST    %Q0.0.0
+LD    [ %IW0.0.1 >= 204 ]
+ST    %Q0.0.1
+LD    [ %IW0.0.1 >= 306 ]
+ST    %Q0.0.2
+LD    [ %IW0.0.1 >= 408 ]
+ST    %Q0.0.3

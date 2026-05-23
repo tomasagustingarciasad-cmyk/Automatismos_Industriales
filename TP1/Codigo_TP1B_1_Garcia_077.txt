@@ -1,0 +1,16 @@
+SECTION    1
+(*SECTTITLE:*)
+(*SECTCOMMENT:*)
+LD    %I0.0.0
+ST    %Q0.0.1
+LD    %I0.0.0
+ANDR  %I0.0.0
+S     %M0
+LD    %M0
+ANDN  %Q0.0.0
+S     %Q0.0.0
+R     %M0
+LD    %M0
+AND   %Q0.0.0
+R     %Q0.0.0
+R     %M0

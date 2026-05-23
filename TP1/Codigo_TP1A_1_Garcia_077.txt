@@ -1,0 +1,21 @@
+SECTION     1
+(*SECTTITLE:Salidas Especiales*)
+(*SECTCOMMENT:*)
+LD    %I0.0.1
+ST    %Q0.0.1
+LD    %I0.0.2
+ST    %Q0.0.2
+SECTION     1
+(*SECTTITLE:Circuito XOR*)
+(*SECTCOMMENT:*)
+(* CON SIMBOLOS ELEMENTALES *)
+LDN   %I0.0.1
+AND   %I0.0.2
+OR(   %I0.0.1
+ANDN  %I0.0.2
+)
+ST    %Q0.0.3
+(* CON OPERADOR XOR *)
+LD    %I0.0.1
+XOR   %I0.0.2
+ST    %Q0.0.4

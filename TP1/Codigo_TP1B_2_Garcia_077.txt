@@ -1,0 +1,38 @@
+SECTION     1
+(*SECTTITLE:Interruptores*)
+(*SECTCOMMENT:*)
+LD    %I0.0.1
+ST    %Q0.0.0
+R     %M1
+LDN   %I0.0.1
+S     %M1
+LD    %I0.0.2
+ST    %Q0.0.1
+LD    %I0.0.3
+ST    %Q0.0.2
+LD    %I0.0.4
+ST    %Q0.0.3
+SECTION     1
+(*SECTTITLE:Logica*)
+(*SECTCOMMENT:*)
+LD    %I0.0.1
+AND   %I0.0.2
+ST    %M0
+LD    %M0
+XOR   %M1
+ST    %Q0.0.4
+ST    %M2
+LD    %I0.0.2
+OR    %I0.0.3
+ST    %M3
+LDN   %I0.0.3
+ORN   %I0.0.4
+ST    %M4
+LD    %M3
+XORN  %M4
+ST    %M5
+ST    %Q0.0.6
+LD    %M5
+OR    %M2
+ST    %M6
+ST    %Q0.0.5

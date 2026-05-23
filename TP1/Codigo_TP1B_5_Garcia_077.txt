@@ -1,0 +1,72 @@
+SECTION     1
+(*SECTTITLE:Funcionamiento sube y baja*)
+(*SECTCOMMENT:*)
+LD    %I0.0.2
+OR    %M3
+ANDN  %I0.0.4
+ANDN  %I0.0.1
+ANDN  %M4
+ANDN  %M2
+ANDN  %M6
+ST    %M3
+LD    %M3
+ST    %Q0.0.6
+LD    %I0.0.3
+OR    %M4
+ANDN  %I0.0.4
+ANDN  %I0.0.0
+ANDN  %M3
+ANDN  %M2
+ANDN  %M6
+ST    %M4
+LD    %M4
+ST    %Q0.0.7
+SECTION     1
+(*SECTTITLE:Alertas*)
+(*SECTCOMMENT:*)
+LD    %I0.0.4
+OR    %I0.0.0
+OR    %M0
+OR    %I0.0.1
+ANDN  %M6
+ANDN  %I0.0.2
+ANDN  %I0.0.3
+ST    %M0
+LD    %M0
+ANDN  %M6
+ST    %Q0.0.3
+LD    %I0.0.2
+OR    %Q0.0.4
+ANDN  %I0.0.1
+ANDN  %Q0.0.5
+ANDN  %M2
+ANDN  %M6
+ST    %Q0.0.4
+LD    %I0.0.3
+OR    %Q0.0.5
+ANDN  %I0.0.0
+ANDN  %Q0.0.4
+ANDN  %M2
+ANDN  %M6
+ST    %Q0.0.5
+LD    %M6
+ST    %Q0.0.2
+SECTION     1
+(*SECTTITLE:Salida*)
+(*SECTCOMMENT:*)
+LD    %I0.0.5
+OR    %M2
+ANDN  %M6
+AND   %M0
+ST    %M2
+BLK   %TM0
+LD    %M2
+IN
+OUT_BLK
+LD    Q
+ST    %M5
+END_BLK
+LD    %M5
+OR    %M6
+ANDN  %I0.0.4
+ST    %M6
